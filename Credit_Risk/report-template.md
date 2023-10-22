@@ -1,31 +1,27 @@
-# Module 12 Report Template
+# Credit Risk Classification Report 
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+* In this analysis, I want to train and evaluate a model based on loan risk
+* I want to build a model that can identify the creditworthiness of borrowers using a dataset of historical lending activity from a peer-to-peer lending services company.
+* Here, we are trying to predict whether the borrower is a healthy loan or a high-risk loan.
+* Throught out this process, I have done the loaded, preprocess, and split the data to be ready for logistic regression model.
+* In this analysis, I used Logistic Regression model and also used over sampling method with Logistic regression. 
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+* Logistic Regression Model 1:
+  * This model has an overall accuracy of 0.99. It performs very well to determine the healthy loans i.e 1 and has 0.87 points in recognising the high-risk loan. This model can be more useful in finding a healthy loan. 
 
 
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Logistic Regression with a resampled data:
+  * This model has an overall accuracy of 1. It performs very well to determine the healthy loans and has 0.87 points in recognising the high-risk loan. 
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+* The Logistic Regression model fitted on the oversampler data has a better accuracy than the logistic regression without the oversampler data. The precision was same but the recall is also better for the Logistic Regression model fitted on the oversampler data.
+* In this scenario, it will be more beneficial if we can predict the high-risk loans as it can help us make a better decision as to whether we should loan the money to this borrower or not. 
 
-If you do not recommend any of the models, please justify your reasoning.
